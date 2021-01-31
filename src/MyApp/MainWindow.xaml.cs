@@ -20,6 +20,8 @@ namespace MyApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string Version { get; } = typeof(MainWindow).Assembly.GetName().Version?.ToString(4) ?? "1.0.0.0";
+
         public MainWindow()
         {
             InitializeComponent();
