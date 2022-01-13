@@ -1,6 +1,6 @@
 # Cake.ClickOnce.Recipe.Example
 
-Example .NET 5 Application using [Cake.ClickOnce.Recipe](https://github.com/devlead/Cake.ClickOnce.Recipe).
+Example .NET 6 Application using [Cake.ClickOnce.Recipe](https://github.com/devlead/Cake.ClickOnce.Recipe).
 
 ## Resources
 
