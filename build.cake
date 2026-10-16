@@ -16,17 +16,9 @@ DotNetTool(
                                             .AppendSwitchQuoted("--output", "table")
                                             .Append(
                                                 (
-(
                                                         !string.IsNullOrWhiteSpace(EnvironmentVariable("NuGetReportSettings_Endpoint"))
                                                         &&
                                                         !string.IsNullOrWhiteSpace(EnvironmentVariable("NuGetReportSettings_RuleId"))
-                                                    )
-                                                    ||
-                                                    (
-                                                        !string.IsNullOrWhiteSpace(EnvironmentVariable("NuGetReportSettings_SharedKey"))
-                                                        &&
-                                                        !string.IsNullOrWhiteSpace(EnvironmentVariable("NuGetReportSettings_WorkspaceId"))
-                                                    )
                                                 )
                                                     ? "report"
                                                     : "analyze"
